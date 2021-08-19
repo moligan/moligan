@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-19T07:56:09.151Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="bppjXmneSI_VoI5sf9j0" version="14.9.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-19T08:03:08.418Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="aR4pos6kh5WiQWhfBlQ0" version="14.9.8" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
     <mxGraphModel dx="2620" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -445,19 +445,36 @@
           <mxGeometry x="-810" y="3380" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="pI9McHAt1SIaVRNVlYuP-97" value="copy_XXX_Samples" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-750" y="3060" width="170" height="80" as="geometry" />
+          <mxGeometry x="-835" y="3260" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="pI9McHAt1SIaVRNVlYuP-99" value="" style="endArrow=none;dashed=1;html=1;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="pI9McHAt1SIaVRNVlYuP-97">
+        <mxCell id="pI9McHAt1SIaVRNVlYuP-104" value="shEnqueue" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-810" y="3240" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pI9McHAt1SIaVRNVlYuP-112" value="" style="endArrow=none;dashed=1;html=1;entryX=0.4;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="pI9McHAt1SIaVRNVlYuP-97">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-740" y="3150" as="sourcePoint" />
-            <mxPoint x="-790" y="3080" as="targetPoint" />
+            <mxPoint x="-760" y="3210" as="sourcePoint" />
+            <mxPoint x="-220" y="3160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pI9McHAt1SIaVRNVlYuP-100" value="" style="endArrow=none;dashed=1;html=1;exitX=0.542;exitY=-0.05;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.924;entryY=0.463;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="pI9McHAt1SIaVRNVlYuP-79" target="pI9McHAt1SIaVRNVlYuP-97">
+        <mxCell id="pI9McHAt1SIaVRNVlYuP-113" value="" style="endArrow=none;dashed=1;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.829;exitY=0.238;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="pI9McHAt1SIaVRNVlYuP-97" target="pI9McHAt1SIaVRNVlYuP-79">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-530" y="3140" as="sourcePoint" />
-            <mxPoint x="-480" y="3090" as="targetPoint" />
+            <mxPoint x="-670" y="3280" as="sourcePoint" />
+            <mxPoint x="-620" y="3230" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="pI9McHAt1SIaVRNVlYuP-115" value="fill max sample" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pI9McHAt1SIaVRNVlYuP-113">
+          <mxGeometry x="0.1461" y="-5" relative="1" as="geometry">
+            <mxPoint y="46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pI9McHAt1SIaVRNVlYuP-114" value="" style="endArrow=none;dashed=1;html=1;entryX=0.108;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.918;exitY=0.525;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="pI9McHAt1SIaVRNVlYuP-97" target="pI9McHAt1SIaVRNVlYuP-81">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-650" y="3310" as="sourcePoint" />
+            <mxPoint x="-600" y="3260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pI9McHAt1SIaVRNVlYuP-116" value="No meet max samples" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-705" y="3240" width="130" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
