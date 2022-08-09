@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2022-08-09T07:54:09.392Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="DmAcnIwPXcbOfV4dk9jJ" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-09T10:04:14.253Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="FOMJMrdL4mH_Leg5TIxz" version="20.2.3" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
     <mxGraphModel dx="2406" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jraqnc70_kOx0N8XIIZB-158" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="7700" width="700" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-109" value="" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#82b366;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="-850" y="8200" width="310" height="260" as="geometry" />
+        </mxCell>
         <mxCell id="jraqnc70_kOx0N8XIIZB-58" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-974.5" y="6760" width="590" height="300" as="geometry" />
         </mxCell>
@@ -991,6 +997,130 @@
         </mxCell>
         <mxCell id="jraqnc70_kOx0N8XIIZB-101" value="    union&#xa;    {&#xa;        struct&#xa;        {&#xa;            uint8_t sensType;&#xa;            uint8_t length;&#xa;            uint8_t dataType;&#xa;            uint8_t interrupt;&#xa;        };&#xa;        uint32_t evtType;&#xa;    };&#xa;    union&#xa;    {&#xa;        struct&#xa;        {&#xa;            uint64_t referenceTime;&#xa;            union&#xa;            {&#xa;                struct SensorFirstSample firstSample;&#xa;                struct SingleAxisDataPoint single[HOSTINTF_SENSOR_DATA_MAX / sizeof(struct SingleAxisDataPoint)];&#xa;                struct TripleAxisDataPoint triple[HOSTINTF_SENSOR_DATA_MAX / sizeof(struct TripleAxisDataPoint)];&#xa;                struct RawTripleAxisDataPoint rawTriple[HOSTINTF_SENSOR_DATA_MAX / sizeof(struct RawTripleAxisDataPoint)];&#xa;            };&#xa;        };&#xa;        uint8_t buffer[sizeof(uint64_t) + HOSTINTF_SENSOR_DATA_MAX];&#xa;    };" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="jraqnc70_kOx0N8XIIZB-100">
           <mxGeometry y="26" width="690" height="374" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-106" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-950" y="7740" width="520" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-144" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-108" target="jraqnc70_kOx0N8XIIZB-141">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-108" target="jraqnc70_kOx0N8XIIZB-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-108" value="HostIntfDataBuffer" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-765" y="8210" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-115" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="-730" y="7817" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-116" value="&lt;span style=&quot;font-size: 10px; background-color: rgb(248, 249, 250);&quot;&gt;hostIntfBridgeRead&lt;/span&gt;" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;rounded=0;" edge="1" target="jraqnc70_kOx0N8XIIZB-115" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-865" y="7820" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-119" value="" style="shape=umlLifeline;participant=umlBoundary;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-895" y="7740" width="50" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-120" value="" style="shape=umlLifeline;participant=umlEntity;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-740" y="7740" width="40" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-136" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="jraqnc70_kOx0N8XIIZB-120">
+          <mxGeometry x="20" y="237" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-137" value="handle cmd" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="jraqnc70_kOx0N8XIIZB-136" parent="jraqnc70_kOx0N8XIIZB-120">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="217" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="55" y="217" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-121" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="-720" y="7837" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-122" value="&lt;span style=&quot;font-size: 10px; text-align: center; background-color: rgb(248, 249, 250);&quot;&gt;hostIntfRxDone&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="jraqnc70_kOx0N8XIIZB-121" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-715" y="7817" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="-685" y="7817" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-123" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="-590" y="7877" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-124" value="&lt;span style=&quot;font-size: 10px; background-color: rgb(248, 249, 250);&quot;&gt;hostIntfFindHandler&lt;/span&gt;" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;rounded=0;" edge="1" target="jraqnc70_kOx0N8XIIZB-123" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-714.5" y="7877" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-125" value="" style="shape=umlLifeline;participant=umlEntity;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-600" y="7740" width="40" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-126" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="7897" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-127" value="&lt;span style=&quot;font-size: 10px; text-align: center; background-color: rgb(248, 249, 250);&quot;&gt;match cmd reason&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="jraqnc70_kOx0N8XIIZB-126" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-575" y="7877" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="-545" y="7877" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-128" value="return cmd handler" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" target="jraqnc70_kOx0N8XIIZB-120">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-580" y="7957" as="sourcePoint" />
+            <mxPoint x="-660" y="7957" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-138" value="&lt;span style=&quot;font-size: 10px; background-color: rgb(248, 249, 250);&quot;&gt;GenerateAck&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-120" target="jraqnc70_kOx0N8XIIZB-119">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-500" y="7870" as="sourcePoint" />
+            <mxPoint x="-580" y="7870" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-760" y="8020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-140" value="EVT_APP_TO_HOST&#xa;EVT_DEBUG_LOG" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-829.5" y="8330" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-146" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-141" target="jraqnc70_kOx0N8XIIZB-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-141" value="buffer" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-800" y="8270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-147" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-142" target="jraqnc70_kOx0N8XIIZB-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-142" value="single/triple/rawTriple" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-690" y="8270" width="122" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-143" value="SENS_TYPE_GYRO&#xa;SENS_TYPE_GYRO_UNCAL&#xa;SENS_TYPE_MAG&#xa;SENS_TYPE_MAG_UNCAL&#xa;SENS_TYPE_BARO&#xa;SENS_TYPE_TEMP&#xa;SENS_TYPE_ALS&#xa;SENS_TYPE_PROX&#xa;......" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-699" y="8330" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-150" value="struct Sensor" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#fff2cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-305" y="7740" width="640" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-151" value="    const struct SensorInfo *si;&#xa;    uint32_t handle;         /* here 0 means invalid */&#xa;    uint64_t currentLatency; /* here 0 means no batching */&#xa;    uint32_t currentRate;    /* here 0 means off */&#xa;    TaggedPtr callInfo;      /* pointer to ops struct or app tid */&#xa;    void *callData;&#xa;    uint32_t initComplete:1; /* sensor finished initializing */&#xa;    uint32_t hasOnchange :1; /* sensor supports onchange and wants to be notified to send new clients current state */&#xa;    uint32_t hasOndemand :1; /* sensor supports ondemand and wants to get triggers */" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="jraqnc70_kOx0N8XIIZB-150">
+          <mxGeometry y="26" width="640" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-153" value="struct SensorInfo" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#fff2cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-305" y="7920" width="380" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-154" value="    const uint32_t *supportedRates;&#xa;    uint8_t sensorType;&#xa;    uint8_t numAxis; /* enum NumAxis */&#xa;    uint8_t interrupt; /* interrupt to generate to AP */&#xa;    uint8_t flags1; /* enum SensorInfoFlags1 */&#xa;    uint16_t minSamples; /* minimum host fifo size (in # of samples) */&#xa;    uint8_t biasType;&#xa;    uint8_t rawType;&#xa;    float rawScale;" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="jraqnc70_kOx0N8XIIZB-153">
+          <mxGeometry y="26" width="380" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-155" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-150" target="jraqnc70_kOx0N8XIIZB-153">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-310" y="7840" as="sourcePoint" />
+            <mxPoint x="10" y="7800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-350" y="7928" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
