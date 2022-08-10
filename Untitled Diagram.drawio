@@ -1,9 +1,18 @@
-<mxfile host="app.diagrams.net" modified="2022-08-09T10:04:14.253Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="FOMJMrdL4mH_Leg5TIxz" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-10T06:21:25.160Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="t8496Y5whnlR7t74phtw" version="20.2.3" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
     <mxGraphModel dx="2406" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jraqnc70_kOx0N8XIIZB-239" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBorderColor=none;fontSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="8720" width="750" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-264" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=none;fontSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="8800" width="310" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-240" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=none;fontSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-530" y="8800" width="410" height="320" as="geometry" />
+        </mxCell>
         <mxCell id="jraqnc70_kOx0N8XIIZB-158" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-360" y="7700" width="700" height="410" as="geometry" />
         </mxCell>
@@ -1120,6 +1129,116 @@
             <Array as="points">
               <mxPoint x="-350" y="7928" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-221" value="SENSOR_RATE_OFF" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-479" y="8830" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-227" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-223" target="jraqnc70_kOx0N8XIIZB-226">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-120" y="8840" />
+              <mxPoint x="-229" y="8840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-223" value="sensorReconfig" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="8800" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-229" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-226" target="jraqnc70_kOx0N8XIIZB-228">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-226" value="sensorCallFuncPower" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-289.5" y="8860.04" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-232" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-228" target="jraqnc70_kOx0N8XIIZB-231">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-228" value="sensorInternalPowerStateChanged" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-319" y="8920.04" width="179" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-230" value="SENSOR_RATE_POWERING_ON" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="8890" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-235" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-231" target="jraqnc70_kOx0N8XIIZB-234">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-231" value="sensorCallFuncFwUpld" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-289.5" y="8980.04" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-233" value="SENSOR_RATE_FW_UPLOADING" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-519" y="8950" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-237" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-234" target="jraqnc70_kOx0N8XIIZB-223">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-229" y="9100" />
+              <mxPoint x="200" y="9100" />
+              <mxPoint x="200" y="8815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-234" value="sensorInternalFwStateChanged" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-306.5" y="9040.04" width="154" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-236" value="SENSOR_RATE_FW_UPLOADING" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-515" y="9010" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-238" value="1" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-515" y="9070" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-241" value="currentRate" style="ellipse;shape=umlEntity;whiteSpace=wrap;labelBorderColor=none;fontSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-475" y="8720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-242" value="CAll Flow" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;labelBorderColor=none;fontSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="8720" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-254" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-244" target="jraqnc70_kOx0N8XIIZB-246">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-244" value="sensorCallFuncSetRate" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="8860" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-246" target="jraqnc70_kOx0N8XIIZB-223">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="9100" />
+              <mxPoint x="200" y="9100" />
+              <mxPoint x="200" y="8815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-246" value="sensorInternalRateChanged" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-75" y="8920" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-247" value="req-&gt;rate" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="70" y="8950.04" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-251" value="1" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="70" y="8830" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-252" value="1" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="70" y="8890.04" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-263" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;fontSize=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-120" y="8840.04" as="sourcePoint" />
+            <mxPoint x="-10" y="8860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-70" y="8840.04" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-265" value="currentRate" style="ellipse;shape=umlEntity;whiteSpace=wrap;labelBorderColor=none;fontSize=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="8720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-266" value="currentRate == newHwRate &amp;&amp; currentLatency == newHwLatency" style="ellipse;shape=cloud;whiteSpace=wrap;labelBorderColor=none;fontSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-399.5" y="8720" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-267" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=1;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-223" target="jraqnc70_kOx0N8XIIZB-266">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-200" y="8870" as="sourcePoint" />
+            <mxPoint x="-150" y="8820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
