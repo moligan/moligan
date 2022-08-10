@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2022-08-10T08:11:10.917Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="2yL-sjHUCT-OolXVp4sF" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-10T08:28:09.913Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="evQxB2kt_GF2OLV0jR09" version="20.2.3" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
     <mxGraphModel dx="2406" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jraqnc70_kOx0N8XIIZB-289" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBorderColor=none;fontSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-705" y="9245" width="665" height="355" as="geometry" />
+        </mxCell>
         <mxCell id="jraqnc70_kOx0N8XIIZB-239" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBorderColor=none;fontSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-540" y="8720" width="750" height="430" as="geometry" />
         </mxCell>
@@ -1250,6 +1253,9 @@
         <mxCell id="jraqnc70_kOx0N8XIIZB-285" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-276" target="jraqnc70_kOx0N8XIIZB-283">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-288" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=1;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-276" target="jraqnc70_kOx0N8XIIZB-286">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="jraqnc70_kOx0N8XIIZB-276" value="ActiveSensor-&gt;buffer" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
           <mxGeometry x="-610" y="9380" width="160" height="30" as="geometry" />
         </mxCell>
@@ -1258,6 +1264,22 @@
         </mxCell>
         <mxCell id="jraqnc70_kOx0N8XIIZB-284" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;sensorTime &amp;gt;= sensor-&amp;gt;firstTime + sensor-&amp;gt;latency ||&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;mWakeupBlocks + mNonWakeupBlocks &amp;gt;= mTotalBlocks&lt;/span&gt;&#xa;&#xa;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;labelBorderColor=none;fontSize=1;" vertex="1" parent="1">
           <mxGeometry x="-728.5" y="9410" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-286" value="enqueueSensorBuffer" style="rounded=1;labelBackgroundColor=none;fontSize=10;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="-235" y="9380" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-287" value="haveFlush || &#xa;numSamples == packetSamples" style="ellipse;shape=cloud;whiteSpace=wrap;labelBorderColor=none;fontSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="9340" width="165" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jraqnc70_kOx0N8XIIZB-291" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;fontSize=1;entryX=0.524;entryY=0.116;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jraqnc70_kOx0N8XIIZB-286" target="jraqnc70_kOx0N8XIIZB-284">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-350" y="9350" as="sourcePoint" />
+            <mxPoint x="-300" y="9300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-320" y="9424" />
+              <mxPoint x="-290" y="9430" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
