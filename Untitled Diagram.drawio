@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-09T07:22:04.902Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="CkDL-Qdw3rTdKCLitUk8" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-09T08:54:14.741Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="qzFOZuPU8-slkrR6ZmG7" version="20.3.0" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
     <mxGraphModel dx="2185" dy="544" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -1447,11 +1447,12 @@
           <mxGeometry x="6" y="200" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="hnzIMGKikupR5HWYlbJd-73" value="Load shub FW" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="hnzIMGKikupR5HWYlbJd-72" parent="hnzIMGKikupR5HWYlbJd-58">
-          <mxGeometry relative="1" as="geometry">
+          <mxGeometry x="-1" y="-62" relative="1" as="geometry">
             <mxPoint x="11" y="180" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="41" y="180" />
             </Array>
+            <mxPoint x="-61" y="-52" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hnzIMGKikupR5HWYlbJd-76" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="hnzIMGKikupR5HWYlbJd-58">
@@ -1500,16 +1501,17 @@
           <mxGeometry x="-50" y="13800" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="hnzIMGKikupR5HWYlbJd-68" value="Kick off DSP" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="hnzIMGKikupR5HWYlbJd-58" target="hnzIMGKikupR5HWYlbJd-62">
-          <mxGeometry width="160" relative="1" as="geometry">
+          <mxGeometry x="0.004" width="160" relative="1" as="geometry">
             <mxPoint x="-130" y="14020" as="sourcePoint" />
             <mxPoint x="30" y="14020" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hnzIMGKikupR5HWYlbJd-71" value="Wait reset flag" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-25" y="14035" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="hnzIMGKikupR5HWYlbJd-74" value="Wait shub&lt;br&gt;&amp;nbsp;HAL reset" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-195" y="14030" width="80" height="40" as="geometry" />
+          <mxGeometry x="-195" y="14040" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="hnzIMGKikupR5HWYlbJd-75" value="Send Reset Cmd" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="hnzIMGKikupR5HWYlbJd-55" target="hnzIMGKikupR5HWYlbJd-58">
           <mxGeometry width="160" relative="1" as="geometry">
